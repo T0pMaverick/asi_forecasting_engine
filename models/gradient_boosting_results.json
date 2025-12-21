@@ -1,0 +1,48 @@
+{
+  "val_results": {
+    "model_name": "Gradient Boosting (Val)",
+    "accuracy": 0.9575856443719413,
+    "precision": 0.9473684210526315,
+    "recall": 0.6,
+    "f1_score": 0.7346938775510204,
+    "auc": 0.9895418927064497,
+    "average_precision": 0.9135271777635714,
+    "confusion_matrix": [
+      [
+        551,
+        2
+      ],
+      [
+        24,
+        36
+      ]
+    ],
+    "tn": 551,
+    "fp": 2,
+    "fn": 24,
+    "tp": 36
+  },
+  "test_results": {
+    "model_name": "Gradient Boosting (Test)",
+    "accuracy": 0.9608482871125612,
+    "precision": 0.95,
+    "recall": 0.6333333333333333,
+    "f1_score": 0.76,
+    "auc": 0.967269439421338,
+    "average_precision": 0.854936754789077,
+    "confusion_matrix": [
+      [
+        551,
+        2
+      ],
+      [
+        22,
+        38
+      ]
+    ],
+    "tn": 551,
+    "fp": 2,
+    "fn": 22,
+    "tp": 38
+  }
+}

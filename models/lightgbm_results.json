@@ -1,0 +1,48 @@
+{
+  "val_results": {
+    "model_name": "LightGBM (Val)",
+    "accuracy": 0.9706362153344209,
+    "precision": 0.8888888888888888,
+    "recall": 0.8,
+    "f1_score": 0.8421052631578947,
+    "auc": 0.9859553948161542,
+    "average_precision": 0.8672819568227602,
+    "confusion_matrix": [
+      [
+        547,
+        6
+      ],
+      [
+        12,
+        48
+      ]
+    ],
+    "tn": 547,
+    "fp": 6,
+    "fn": 12,
+    "tp": 48
+  },
+  "test_results": {
+    "model_name": "LightGBM (Test)",
+    "accuracy": 0.965742251223491,
+    "precision": 0.8823529411764706,
+    "recall": 0.75,
+    "f1_score": 0.8108108108108109,
+    "auc": 0.9817661241711875,
+    "average_precision": 0.8942215547118925,
+    "confusion_matrix": [
+      [
+        547,
+        6
+      ],
+      [
+        15,
+        45
+      ]
+    ],
+    "tn": 547,
+    "fp": 6,
+    "fn": 15,
+    "tp": 45
+  }
+}

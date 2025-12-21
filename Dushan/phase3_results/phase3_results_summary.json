@@ -1,0 +1,198 @@
+{
+  "evaluation_results": {
+    "Precision_LightGBM": {
+      "auc": 0.9036502546689303,
+      "accuracy": 0.8790199081163859,
+      "precision": 0.42574257425742573,
+      "recall": 0.671875,
+      "f1_score": 0.5212121212121212,
+      "threshold": 0.7786622073578595,
+      "confusion_matrix": [
+        [
+          531,
+          58
+        ],
+        [
+          21,
+          43
+        ]
+      ],
+      "false_negative_rate": 0.328125,
+      "false_positive_rate": 0.09847198641765705,
+      "total_cost": 226.0,
+      "true_negatives": 531,
+      "false_positives": 58,
+      "false_negatives": 21,
+      "true_positives": 43
+    },
+    "Precision_XGBoost": {
+      "auc": 0.9303904923599321,
+      "accuracy": 0.9081163859111792,
+      "precision": 0.524390243902439,
+      "recall": 0.671875,
+      "f1_score": 0.589041095890411,
+      "threshold": 0.8292642140468227,
+      "confusion_matrix": [
+        [
+          550,
+          39
+        ],
+        [
+          21,
+          43
+        ]
+      ],
+      "false_negative_rate": 0.328125,
+      "false_positive_rate": 0.06621392190152801,
+      "total_cost": 207.0,
+      "true_negatives": 550,
+      "false_positives": 39,
+      "false_negatives": 21,
+      "true_positives": 43
+    },
+    "Precision_RandomForest": {
+      "auc": 0.9126167232597623,
+      "accuracy": 0.9142419601837672,
+      "precision": 0.9,
+      "recall": 0.140625,
+      "f1_score": 0.24324324324324326,
+      "threshold": 0.8798662207357859,
+      "confusion_matrix": [
+        [
+          588,
+          1
+        ],
+        [
+          55,
+          9
+        ]
+      ],
+      "false_negative_rate": 0.859375,
+      "false_positive_rate": 0.001697792869269949,
+      "total_cost": 441.0,
+      "true_negatives": 588,
+      "false_positives": 1,
+      "false_negatives": 55,
+      "true_positives": 9
+    },
+    "Precision_LogisticRegression": {
+      "auc": 0.8499310271646859,
+      "accuracy": 0.7947932618683001,
+      "precision": 0.28125,
+      "recall": 0.703125,
+      "f1_score": 0.4017857142857143,
+      "threshold": 0.4274247491638796,
+      "confusion_matrix": [
+        [
+          474,
+          115
+        ],
+        [
+          19,
+          45
+        ]
+      ],
+      "false_negative_rate": 0.296875,
+      "false_positive_rate": 0.19524617996604415,
+      "total_cost": 267.0,
+      "true_negatives": 474,
+      "false_positives": 115,
+      "false_negatives": 19,
+      "true_positives": 45
+    },
+    "Precision_Stacked_Ensemble": {
+      "auc": 0.9192752546689303,
+      "accuracy": 0.9142419601837672,
+      "precision": 0.9,
+      "recall": 0.140625,
+      "f1_score": 0.24324324324324326,
+      "threshold": 0.924515050167224,
+      "confusion_matrix": [
+        [
+          588,
+          1
+        ],
+        [
+          55,
+          9
+        ]
+      ],
+      "false_negative_rate": 0.859375,
+      "false_positive_rate": 0.001697792869269949,
+      "total_cost": 441.0,
+      "true_negatives": 588,
+      "false_positives": 1,
+      "false_negatives": 55,
+      "true_positives": 9
+    }
+  },
+  "configuration": {
+    "fn_penalty": 8.0,
+    "fp_penalty": 1.0,
+    "target_precision": 0.92,
+    "phase3_improvements": [
+      "Phase 1: \u2705 Fixed overfitting + data distribution",
+      "Phase 2: \u2705 Optimized for downturn detection performance",
+      "Phase 3: \ud83d\ude80 AGGRESSIVE precision targeting",
+      "Increased FN penalty to 8x for precision focus",
+      "30+ precision-focused features",
+      "Aggressive threshold optimization for 90%+ precision",
+      "Precision-focused stacked ensemble",
+      "Added accuracy metric to comprehensive evaluation",
+      "Market regime and volatility clustering features"
+    ]
+  },
+  "feature_engineering": {
+    "total_features": 41,
+    "feature_names": [
+      "rsi_7",
+      "rsi_14",
+      "rsi_21",
+      "rsi_slope",
+      "macd",
+      "macd_hist",
+      "macd_acceleration",
+      "macd_divergence",
+      "momentum_3",
+      "momentum_5",
+      "momentum_10",
+      "momentum_20",
+      "momentum_acceleration",
+      "volatility_10",
+      "volatility_20",
+      "volatility_60",
+      "vol_regime",
+      "vol_spike",
+      "vol_cluster",
+      "price_vs_sma20",
+      "price_vs_sma50",
+      "price_vs_sma200",
+      "trend_strength",
+      "local_dd_10",
+      "local_dd_20",
+      "local_dd_60",
+      "local_dd_120",
+      "below_sma50",
+      "below_all_ma",
+      "negative_momentum_10",
+      "negative_momentum_20",
+      "rsi_oversold",
+      "rsi_below_50",
+      "macd_bearish",
+      "macd_declining",
+      "return_5d",
+      "return_10d",
+      "vol_adjusted_return_5",
+      "vol_adjusted_return_10",
+      "consecutive_red_days",
+      "extreme_moves"
+    ]
+  },
+  "best_model": "Precision_RandomForest",
+  "targets_achieved": {
+    "precision_90": true,
+    "auc_85": true,
+    "fn_rate_10": false
+  },
+  "training_date": "2025-12-19T18:40:34.525709"
+}

@@ -1,0 +1,181 @@
+{
+  "evaluation_results": {
+    "Balanced_LightGBM": {
+      "auc": 0.9197527589134125,
+      "accuracy": 0.889739663093415,
+      "precision": 0.46226415094339623,
+      "recall": 0.765625,
+      "f1_score": 0.5764705882352941,
+      "f_beta_score": 0.5315230047059638,
+      "threshold": 0.6869346733668342,
+      "confusion_matrix": [
+        [
+          532,
+          57
+        ],
+        [
+          15,
+          49
+        ]
+      ],
+      "false_negative_rate": 0.234375,
+      "false_positive_rate": 0.0967741935483871,
+      "total_cost": 147.0,
+      "true_negatives": 532,
+      "false_positives": 57,
+      "false_negatives": 15,
+      "true_positives": 49
+    },
+    "Balanced_XGBoost": {
+      "auc": 0.9385611205432938,
+      "accuracy": 0.9050535987748851,
+      "precision": 0.5098039215686274,
+      "recall": 0.8125,
+      "f1_score": 0.6265060240963856,
+      "f_beta_score": 0.5809838026924429,
+      "threshold": 0.7150753768844221,
+      "confusion_matrix": [
+        [
+          539,
+          50
+        ],
+        [
+          12,
+          52
+        ]
+      ],
+      "false_negative_rate": 0.1875,
+      "false_positive_rate": 0.08488964346349745,
+      "total_cost": 122.0,
+      "true_negatives": 539,
+      "false_positives": 50,
+      "false_negatives": 12,
+      "true_positives": 52
+    },
+    "Balanced_RandomForest": {
+      "auc": 0.9311863327674024,
+      "accuracy": 0.9188361408882083,
+      "precision": 0.7391304347826086,
+      "recall": 0.265625,
+      "f1_score": 0.39080459770114945,
+      "f_beta_score": 0.46596762251016716,
+      "threshold": 0.7311557788944724,
+      "confusion_matrix": [
+        [
+          583,
+          6
+        ],
+        [
+          47,
+          17
+        ]
+      ],
+      "false_negative_rate": 0.734375,
+      "false_positive_rate": 0.010186757215619695,
+      "total_cost": 288.0,
+      "true_negatives": 583,
+      "false_positives": 6,
+      "false_negatives": 47,
+      "true_positives": 17
+    },
+    "Balanced_GradientBoosting": {
+      "auc": 0.9352451188455009,
+      "accuracy": 0.9433384379785605,
+      "precision": 0.7368421052631579,
+      "recall": 0.65625,
+      "f1_score": 0.6942148760330579,
+      "f_beta_score": 0.7082390214857898,
+      "threshold": 0.5542713567839197,
+      "confusion_matrix": [
+        [
+          574,
+          15
+        ],
+        [
+          22,
+          42
+        ]
+      ],
+      "false_negative_rate": 0.34375,
+      "false_positive_rate": 0.025466893039049237,
+      "total_cost": 147.0,
+      "true_negatives": 574,
+      "false_positives": 15,
+      "false_negatives": 22,
+      "true_positives": 42
+    },
+    "Balanced_LogisticRegression": {
+      "auc": 0.836879244482173,
+      "accuracy": 0.7166921898928025,
+      "precision": 0.2311111111111111,
+      "recall": 0.8125,
+      "f1_score": 0.35986159169550175,
+      "f_beta_score": 0.3022312369960415,
+      "threshold": 0.2728643216080402,
+      "confusion_matrix": [
+        [
+          416,
+          173
+        ],
+        [
+          12,
+          52
+        ]
+      ],
+      "false_negative_rate": 0.1875,
+      "false_positive_rate": 0.2937181663837012,
+      "total_cost": 245.0,
+      "true_negatives": 416,
+      "false_positives": 173,
+      "false_negatives": 12,
+      "true_positives": 52
+    },
+    "Balanced_Ensemble": {
+      "auc": 0.9359879032258065,
+      "accuracy": 0.9218989280245024,
+      "precision": 0.5844155844155844,
+      "recall": 0.703125,
+      "f1_score": 0.6382978723404256,
+      "f_beta_score": 0.6187707634942573,
+      "threshold": 0.564321608040201,
+      "confusion_matrix": [
+        [
+          557,
+          32
+        ],
+        [
+          19,
+          45
+        ]
+      ],
+      "false_negative_rate": 0.296875,
+      "false_positive_rate": 0.05432937181663837,
+      "total_cost": 146.0,
+      "true_negatives": 557,
+      "false_positives": 32,
+      "false_negatives": 19,
+      "true_positives": 45
+    }
+  },
+  "configuration": {
+    "fn_penalty": 6.0,
+    "target_precision": 0.87,
+    "target_recall": 0.65,
+    "phase4_improvements": [
+      "Balanced precision-recall optimization",
+      "Multi-objective threshold optimization",
+      "F-beta score optimization (beta=0.7)",
+      "Prevented over-conservatism",
+      "Diverse ensemble weighting",
+      "Practical false negative targets"
+    ]
+  },
+  "best_model": "Balanced_GradientBoosting",
+  "targets_achieved": {
+    "auc_85": true,
+    "precision_balanced": false,
+    "recall_60": true,
+    "fn_practical": false
+  },
+  "training_date": "2025-12-19T19:37:14.709758"
+}

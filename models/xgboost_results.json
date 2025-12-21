@@ -1,0 +1,48 @@
+{
+  "val_results": {
+    "model_name": "XGBoost (Val)",
+    "accuracy": 0.965742251223491,
+    "precision": 0.8305084745762712,
+    "recall": 0.8166666666666667,
+    "f1_score": 0.8235294117647058,
+    "auc": 0.989089813140446,
+    "average_precision": 0.8740738168310054,
+    "confusion_matrix": [
+      [
+        543,
+        10
+      ],
+      [
+        11,
+        49
+      ]
+    ],
+    "tn": 543,
+    "fp": 10,
+    "fn": 11,
+    "tp": 49
+  },
+  "test_results": {
+    "model_name": "XGBoost (Test)",
+    "accuracy": 0.9690048939641109,
+    "precision": 0.9183673469387755,
+    "recall": 0.75,
+    "f1_score": 0.8256880733944955,
+    "auc": 0.9777878239903556,
+    "average_precision": 0.8974013482965519,
+    "confusion_matrix": [
+      [
+        549,
+        4
+      ],
+      [
+        15,
+        45
+      ]
+    ],
+    "tn": 549,
+    "fp": 4,
+    "fn": 15,
+    "tp": 45
+  }
+}

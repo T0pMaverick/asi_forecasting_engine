@@ -1,0 +1,25 @@
+2025-12-05 20:02:09,474 - INFO - Initialized fetcher for ASI
+2025-12-05 20:02:09,474 - INFO - Date range: 2010-12-09 to 2025-12-05
+2025-12-05 20:02:09,482 - INFO - ============================================================
+2025-12-05 20:02:09,482 - INFO - Fetching ASI close prices for last 15 years
+2025-12-05 20:02:09,482 - INFO - Date range: 2010-12-09 to 2025-12-05
+2025-12-05 20:02:09,482 - INFO - ============================================================
+2025-12-05 20:02:09,482 - INFO - Fetching ASI data from TradingView...
+2025-12-05 20:02:09,482 - WARNING - you are using nologin method, data you access may be limited
+2025-12-05 20:02:09,483 - INFO - Trying TradingView symbol: ASI
+2025-12-05 20:02:15,823 - INFO - [SUCCESS] Fetched 3264 records from TradingView
+2025-12-05 20:02:15,825 - INFO - Date range: 2012-02-23 to 2025-12-05
+2025-12-05 20:02:15,847 - INFO - [SUCCESS] Saved data to C:\Users\kanchana\OneDrive\Documents\GitHub\investx_ml\investX_ML\ASI_prediction\ASI_close_prices_last_15_years_2025-12-05.csv
+2025-12-05 20:02:15,848 - INFO - ============================================================
+2025-12-05 20:02:15,848 - INFO - DATA SUMMARY
+2025-12-05 20:02:15,848 - INFO - ============================================================
+2025-12-05 20:02:15,848 - INFO - Total records: 3264
+2025-12-05 20:02:15,849 - INFO - Date range: 2012-02-23 to 2025-12-05
+2025-12-05 20:02:15,850 - INFO - Price range: 4247.95 - 23659.70
+2025-12-05 20:02:15,850 - INFO - First close price: 5507.60
+2025-12-05 20:02:15,850 - INFO - Last close price: 21497.08
+2025-12-05 20:02:15,850 - INFO - Total price change: 15989.48 (+290.32%)
+2025-12-05 20:02:15,851 - INFO - Annualized return: 10.39%
+2025-12-05 20:02:15,851 - INFO - ============================================================
+2025-12-05 20:02:15,851 - INFO - [SUCCESS] DATA FETCHING COMPLETED SUCCESSFULLY!
+2025-12-05 20:02:15,851 - INFO - ============================================================

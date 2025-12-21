@@ -1,0 +1,174 @@
+{
+  "evaluation_results": {
+    "Optimized_LightGBM": {
+      "auc": 0.8864335738539898,
+      "precision": 0.3617021276595745,
+      "recall": 0.796875,
+      "f1_score": 0.4975609756097561,
+      "threshold": 0.6922110552763819,
+      "confusion_matrix": [
+        [
+          499,
+          90
+        ],
+        [
+          13,
+          51
+        ]
+      ],
+      "false_negative_rate": 0.203125,
+      "false_positive_rate": 0.15280135823429541,
+      "total_cost": 155.0,
+      "true_negatives": 499,
+      "false_positives": 90,
+      "false_negatives": 13,
+      "true_positives": 51
+    },
+    "Optimized_XGBoost": {
+      "auc": 0.9201108870967741,
+      "precision": 0.527027027027027,
+      "recall": 0.609375,
+      "f1_score": 0.5652173913043478,
+      "threshold": 0.8369346733668341,
+      "confusion_matrix": [
+        [
+          554,
+          35
+        ],
+        [
+          25,
+          39
+        ]
+      ],
+      "false_negative_rate": 0.390625,
+      "false_positive_rate": 0.059422750424448216,
+      "total_cost": 160.0,
+      "true_negatives": 554,
+      "false_positives": 35,
+      "false_negatives": 25,
+      "true_positives": 39
+    },
+    "Optimized_RandomForest": {
+      "auc": 0.8943123938879456,
+      "precision": 0.5352112676056338,
+      "recall": 0.59375,
+      "f1_score": 0.562962962962963,
+      "threshold": 0.47060301507537683,
+      "confusion_matrix": [
+        [
+          556,
+          33
+        ],
+        [
+          26,
+          38
+        ]
+      ],
+      "false_negative_rate": 0.40625,
+      "false_positive_rate": 0.05602716468590832,
+      "total_cost": 163.0,
+      "true_negatives": 556,
+      "false_positives": 33,
+      "false_negatives": 26,
+      "true_positives": 38
+    },
+    "Optimized_LogisticRegression": {
+      "auc": 0.8345978353140917,
+      "precision": 0.11449016100178891,
+      "recall": 1.0,
+      "f1_score": 0.20545746388443017,
+      "threshold": 0.1314070351758794,
+      "confusion_matrix": [
+        [
+          94,
+          495
+        ],
+        [
+          0,
+          64
+        ]
+      ],
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.8404074702886248,
+      "total_cost": 495.0,
+      "true_negatives": 94,
+      "false_positives": 495,
+      "false_negatives": 0,
+      "true_positives": 64
+    },
+    "Weighted_Ensemble": {
+      "auc": 0.9029605263157895,
+      "precision": 0.4098360655737705,
+      "recall": 0.78125,
+      "f1_score": 0.5376344086021505,
+      "threshold": 0.5384422110552763,
+      "confusion_matrix": [
+        [
+          517,
+          72
+        ],
+        [
+          14,
+          50
+        ]
+      ],
+      "false_negative_rate": 0.21875,
+      "false_positive_rate": 0.12224108658743633,
+      "total_cost": 142.0,
+      "true_negatives": 517,
+      "false_positives": 72,
+      "false_negatives": 14,
+      "true_positives": 50
+    }
+  },
+  "configuration": {
+    "fn_penalty": 5.0,
+    "fp_penalty": 1.0,
+    "target_precision": 0.92,
+    "improvements_applied": [
+      "Phase 1: Fixed overfitting + data distribution",
+      "Phase 2: Optimized for downturn detection performance",
+      "Sweet spot FN penalty (5x)",
+      "Enhanced 20-feature set",
+      "Precision-focused threshold optimization",
+      "Weighted ensemble based on downturn detection ability",
+      "Multi-objective scoring (precision + FN rate + recall)"
+    ]
+  },
+  "feature_engineering": {
+    "total_features": 24,
+    "feature_names": [
+      "rsi_14",
+      "rsi_7",
+      "macd_hist",
+      "macd",
+      "momentum_5",
+      "momentum_10",
+      "momentum_20",
+      "volatility_20",
+      "volatility_60",
+      "vol_spike",
+      "price_vs_sma20",
+      "price_vs_sma50",
+      "price_vs_sma200",
+      "local_dd_20",
+      "local_dd_60",
+      "local_dd_120",
+      "below_sma50",
+      "negative_momentum_20",
+      "rsi_below_30",
+      "rsi_below_50",
+      "macd_bearish",
+      "return_5d",
+      "return_10d",
+      "vol_adjusted_return"
+    ]
+  },
+  "best_model": "Weighted_Ensemble",
+  "targets_achieved": {
+    "precision_90": false,
+    "auc_85": true,
+    "fn_rate_10": true
+  },
+  "training_date": "2025-12-19T18:26:05.434387"
+}

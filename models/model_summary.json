@@ -1,0 +1,66 @@
+{
+  "best_model": "LightGBM",
+  "best_auc": 0.9817661241711875,
+  "target": "-5% drawdown in 10 days",
+  "all_results": {
+    "Logistic Regression": {
+      "auc": 0.8662145871006631,
+      "f1": 0.5,
+      "precision": 0.3671875,
+      "recall": 0.7833333333333333
+    },
+    "Random Forest": {
+      "auc": 0.9589210367691381,
+      "f1": 0.7241379310344828,
+      "precision": 0.75,
+      "recall": 0.7
+    },
+    "Gradient Boosting": {
+      "auc": 0.967269439421338,
+      "f1": 0.76,
+      "precision": 0.95,
+      "recall": 0.6333333333333333
+    },
+    "XGBoost": {
+      "auc": 0.9777878239903556,
+      "f1": 0.8256880733944955,
+      "precision": 0.9183673469387755,
+      "recall": 0.75
+    },
+    "LightGBM": {
+      "auc": 0.9817661241711875,
+      "f1": 0.8108108108108109,
+      "precision": 0.8823529411764706,
+      "recall": 0.75
+    }
+  },
+  "feature_names": [
+    "rsi_14",
+    "rsi_7",
+    "macd",
+    "macd_hist",
+    "momentum_10",
+    "momentum_20",
+    "momentum_50",
+    "price_vs_sma20",
+    "price_vs_sma50",
+    "price_vs_sma200",
+    "sma20_vs_sma50",
+    "sma50_vs_sma200",
+    "volatility_20",
+    "volatility_60",
+    "local_dd_20",
+    "local_dd_60",
+    "local_dd_120",
+    "return_1d",
+    "return_3d",
+    "return_5d",
+    "return_7d",
+    "return_10d",
+    "below_sma50",
+    "negative_momentum_20",
+    "rsi_below_50",
+    "macd_bearish"
+  ],
+  "training_date": "2025-12-05T21:23:42.007646"
+}

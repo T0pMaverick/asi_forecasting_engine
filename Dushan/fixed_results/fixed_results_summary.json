@@ -1,0 +1,293 @@
+{
+  "evaluation_results": {
+    "Regularized_LightGBM": {
+      "auc": 0.8430337436332768,
+      "precision": 0.5111111111111111,
+      "recall": 0.359375,
+      "f1_score": 0.42201834862385323,
+      "threshold": 0.5202020202020202,
+      "confusion_matrix": [
+        [
+          567,
+          22
+        ],
+        [
+          41,
+          23
+        ]
+      ],
+      "false_negative_rate": 0.640625,
+      "false_positive_rate": 0.03735144312393888,
+      "total_cost": 104.0,
+      "true_negatives": 567,
+      "false_positives": 22,
+      "false_negatives": 41,
+      "true_positives": 23
+    },
+    "Regularized_XGBoost": {
+      "auc": 0.8339081069609507,
+      "precision": 0.5806451612903226,
+      "recall": 0.28125,
+      "f1_score": 0.37894736842105264,
+      "threshold": 0.6979797979797979,
+      "confusion_matrix": [
+        [
+          576,
+          13
+        ],
+        [
+          46,
+          18
+        ]
+      ],
+      "false_negative_rate": 0.71875,
+      "false_positive_rate": 0.022071307300509338,
+      "total_cost": 105.0,
+      "true_negatives": 576,
+      "false_positives": 13,
+      "false_negatives": 46,
+      "true_positives": 18
+    },
+    "Regularized_RandomForest": {
+      "auc": 0.8404870543293719,
+      "precision": 0.6428571428571429,
+      "recall": 0.28125,
+      "f1_score": 0.391304347826087,
+      "threshold": 0.5848484848484848,
+      "confusion_matrix": [
+        [
+          579,
+          10
+        ],
+        [
+          46,
+          18
+        ]
+      ],
+      "false_negative_rate": 0.71875,
+      "false_positive_rate": 0.01697792869269949,
+      "total_cost": 102.0,
+      "true_negatives": 579,
+      "false_positives": 10,
+      "false_negatives": 46,
+      "true_positives": 18
+    },
+    "Regularized_LogisticRegression": {
+      "auc": 0.8419726230899831,
+      "precision": 0.6363636363636364,
+      "recall": 0.21875,
+      "f1_score": 0.32558139534883723,
+      "threshold": 0.5040404040404041,
+      "confusion_matrix": [
+        [
+          581,
+          8
+        ],
+        [
+          50,
+          14
+        ]
+      ],
+      "false_negative_rate": 0.78125,
+      "false_positive_rate": 0.013582342954159592,
+      "total_cost": 108.0,
+      "true_negatives": 581,
+      "false_positives": 8,
+      "false_negatives": 50,
+      "true_positives": 14
+    },
+    "Ensemble": {
+      "auc": 0.8488168505942275,
+      "precision": 0.5813953488372093,
+      "recall": 0.390625,
+      "f1_score": 0.4672897196261682,
+      "threshold": 0.5121212121212121,
+      "confusion_matrix": [
+        [
+          571,
+          18
+        ],
+        [
+          39,
+          25
+        ]
+      ],
+      "false_negative_rate": 0.609375,
+      "false_positive_rate": 0.030560271646859084,
+      "total_cost": 96.0,
+      "true_negatives": 571,
+      "false_positives": 18,
+      "false_negatives": 39,
+      "true_positives": 25
+    }
+  },
+  "overfitting_results": {
+    "Regularized_LightGBM": {
+      "overfitting_status": "SLIGHT OVERFITTING",
+      "overfitting_score": 1,
+      "indicators": [
+        "Moderate AUC gap: 0.067"
+      ],
+      "metrics": {
+        "train_auc": 0.8727898545406507,
+        "val_auc": 0.8059475806451614,
+        "auc_gap": 0.06684227389548936,
+        "train_precision": 0.4607329842931937,
+        "val_precision": 0.36619718309859156,
+        "precision_gap": 0.09453580119460214,
+        "train_recall": 0.45595854922279794,
+        "val_recall": 0.40625,
+        "recall_gap": 0.04970854922279794
+      },
+      "cv_stability": {
+        "auc_mean": 0,
+        "auc_std": 0,
+        "auc_scores": []
+      }
+    },
+    "Regularized_XGBoost": {
+      "overfitting_status": "SLIGHT OVERFITTING",
+      "overfitting_score": 1,
+      "indicators": [
+        "Moderate AUC gap: 0.063"
+      ],
+      "metrics": {
+        "train_auc": 0.8752396189581529,
+        "val_auc": 0.8121551358234294,
+        "auc_gap": 0.06308448313472359,
+        "train_precision": 0.09856996935648621,
+        "val_precision": 0.09800918836140889,
+        "precision_gap": 0.0005607809950773229,
+        "train_recall": 1.0,
+        "val_recall": 1.0,
+        "recall_gap": 0.0
+      },
+      "cv_stability": {
+        "auc_mean": 0,
+        "auc_std": 0,
+        "auc_scores": []
+      }
+    },
+    "Regularized_RandomForest": {
+      "overfitting_status": "SLIGHT OVERFITTING",
+      "overfitting_score": 1,
+      "indicators": [
+        "Moderate AUC gap: 0.073"
+      ],
+      "metrics": {
+        "train_auc": 0.8935020329081595,
+        "val_auc": 0.820392084040747,
+        "auc_gap": 0.07310994886741251,
+        "train_precision": 0.6857142857142857,
+        "val_precision": 0.5526315789473685,
+        "precision_gap": 0.13308270676691725,
+        "train_recall": 0.37305699481865284,
+        "val_recall": 0.328125,
+        "recall_gap": 0.04493199481865284
+      },
+      "cv_stability": {
+        "auc_mean": 0.8284997813023712,
+        "auc_std": 0.03944907926018626,
+        "auc_scores": [
+          0.8813136672325977,
+          0.8176609105180535,
+          0.7865247661564626
+        ]
+      }
+    },
+    "Regularized_LogisticRegression": {
+      "overfitting_status": "NO OVERFITTING",
+      "overfitting_score": 0,
+      "indicators": [],
+      "metrics": {
+        "train_auc": 0.8056715935945047,
+        "val_auc": 0.7638741511035654,
+        "auc_gap": 0.04179744249093931,
+        "train_precision": 0.5692307692307692,
+        "val_precision": 0.5384615384615384,
+        "precision_gap": 0.03076923076923077,
+        "train_recall": 0.19170984455958548,
+        "val_recall": 0.21875,
+        "recall_gap": -0.02704015544041452
+      },
+      "cv_stability": {
+        "auc_mean": 0.8035999678184146,
+        "auc_std": 0.029164734637490298,
+        "auc_scores": [
+          0.8431663837011883,
+          0.7939037153322868,
+          0.7737298044217686
+        ]
+      }
+    }
+  },
+  "optimal_thresholds": {
+    "Regularized_LightGBM": {
+      "threshold": 0.5202020202020202,
+      "precision": 0.45652173913043476,
+      "recall": 0.328125,
+      "fn_rate": 0.671875,
+      "f_beta": 0.4233870958168573
+    },
+    "Regularized_XGBoost": {
+      "threshold": 0.6979797979797979,
+      "precision": 0.6333333333333333,
+      "recall": 0.296875,
+      "fn_rate": 0.703125,
+      "f_beta": 0.5163043466918714
+    },
+    "Regularized_RandomForest": {
+      "threshold": 0.5848484848484848,
+      "precision": 0.6428571428571429,
+      "recall": 0.28125,
+      "fn_rate": 0.71875,
+      "f_beta": 0.5113636352066115
+    },
+    "Regularized_LogisticRegression": {
+      "threshold": 0.5040404040404041,
+      "precision": 0.5833333333333334,
+      "recall": 0.21875,
+      "fn_rate": 0.78125,
+      "f_beta": 0.4374999988
+    }
+  },
+  "configuration": {
+    "fn_penalty": 2.0,
+    "fp_penalty": 1.0,
+    "target_precision": 0.92,
+    "fixes_applied": [
+      "Stratified splits (not time-based)",
+      "Reduced features (15 instead of 82)",
+      "Reduced FN penalty (2x instead of 20x)",
+      "Strong regularization",
+      "Simpler model architectures"
+    ]
+  },
+  "feature_engineering": {
+    "total_features": 15,
+    "feature_names": [
+      "rsi_14",
+      "macd_hist",
+      "momentum_10",
+      "momentum_20",
+      "volatility_20",
+      "price_vs_sma20",
+      "price_vs_sma50",
+      "local_dd_60",
+      "below_sma50",
+      "negative_momentum_20",
+      "rsi_below_50",
+      "macd_bearish",
+      "return_5d",
+      "return_10d",
+      "macd"
+    ]
+  },
+  "best_model": "Ensemble",
+  "targets_achieved": {
+    "precision_90": false,
+    "auc_85": false,
+    "fn_rate_10": false
+  },
+  "training_date": "2025-12-19T13:28:29.730315"
+}

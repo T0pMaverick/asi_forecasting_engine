@@ -1,0 +1,37 @@
+{
+  "feature_names": [
+    "rsi_14",
+    "macd_hist",
+    "momentum_10",
+    "momentum_20",
+    "volatility_20",
+    "price_vs_sma20",
+    "price_vs_sma50",
+    "local_dd_60",
+    "below_sma50",
+    "negative_momentum_20",
+    "rsi_below_50",
+    "macd_bearish",
+    "return_5d",
+    "return_10d",
+    "macd"
+  ],
+  "dataset_info": {
+    "total_samples": 3264,
+    "train_samples": 1958,
+    "val_samples": 653,
+    "test_samples": 653,
+    "train_positive_ratio": 0.09856996935648621,
+    "val_positive_ratio": 0.09800918836140889,
+    "test_positive_ratio": 0.09800918836140889,
+    "date_range": {
+      "start": "2012-02-23 00:00:00",
+      "end": "2025-12-05 00:00:00"
+    }
+  },
+  "fixes_applied": {
+    "stratified_splits": true,
+    "reduced_features": "15 features (was 82)",
+    "reduced_penalty": "2.0x (was 20x)"
+  }
+}

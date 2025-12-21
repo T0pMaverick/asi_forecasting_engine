@@ -1,0 +1,48 @@
+{
+  "val_results": {
+    "model_name": "Logistic Regression (Val)",
+    "accuracy": 0.8123980424143556,
+    "precision": 0.2932330827067669,
+    "recall": 0.65,
+    "f1_score": 0.40414507772020725,
+    "auc": 0.8308016877637131,
+    "average_precision": 0.40439060893562195,
+    "confusion_matrix": [
+      [
+        459,
+        94
+      ],
+      [
+        21,
+        39
+      ]
+    ],
+    "tn": 459,
+    "fp": 94,
+    "fn": 21,
+    "tp": 39
+  },
+  "test_results": {
+    "model_name": "Logistic Regression (Test)",
+    "accuracy": 0.8466557911908646,
+    "precision": 0.3671875,
+    "recall": 0.7833333333333333,
+    "f1_score": 0.5,
+    "auc": 0.8662145871006631,
+    "average_precision": 0.5050439154560206,
+    "confusion_matrix": [
+      [
+        472,
+        81
+      ],
+      [
+        13,
+        47
+      ]
+    ],
+    "tn": 472,
+    "fp": 81,
+    "fn": 13,
+    "tp": 47
+  }
+}
