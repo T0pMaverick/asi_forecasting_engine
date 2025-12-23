@@ -67,4 +67,6 @@ fastapi-users==12.1.2
 
 chromedriver
 
+sqlalchemy==2.0.25
+
 git+https://github.com/rongardF/tvdatafeed.git
