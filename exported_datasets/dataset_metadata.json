@@ -1,0 +1,42 @@
+{
+  "export_timestamp": "2026-01-05T21:02:09.550328",
+  "original_data_range": {
+    "start_date": "2012-02-23 00:00:00",
+    "end_date": "2025-06-05 00:00:00",
+    "total_records": 3264
+  },
+  "feature_engineering": {
+    "total_features_computed": 58,
+    "selected_features_for_training": 31,
+    "feature_categories": {
+      "technical_indicators": 21,
+      "severity_specific": 8,
+      "derived_metrics": 2
+    }
+  },
+  "classification_data": {
+    "total_samples": 2870,
+    "positive_samples": 141,
+    "negative_samples": 1581,
+    "class_ratio": "1:11.2",
+    "train_samples": 1722,
+    "val_samples": 574,
+    "test_samples": 574
+  },
+  "severity_data": {
+    "total_samples": 16,
+    "train_samples": 9,
+    "val_samples": 3,
+    "test_samples": 4,
+    "targets": [
+      "additional_severity",
+      "days_to_trough"
+    ]
+  },
+  "historical_analysis": {
+    "total_downturns_identified": 18,
+    "recovery_rate": "88.9%",
+    "avg_severity": "-13.22%",
+    "avg_duration": "94.1 days"
+  }
+}

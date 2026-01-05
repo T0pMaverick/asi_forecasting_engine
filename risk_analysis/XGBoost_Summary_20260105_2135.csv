@@ -1,0 +1,15 @@
+Metric,Value
+Testing Period,2025-06-06 to 2025-11-20
+Total Predictions,113
+Overall Accuracy,95.6%
+Precision (No False Alarms),0.0%
+Recall (Catches Real Downturns),0.0%
+F1 Score,0.000
+True Positives,0
+True Negatives,108
+False Positives (False Alarms),0
+False Negatives (Missed),5
+Actual Downturns in Period,5
+Predicted Downturns,0
+Average Predicted Loss ($1M),$0
+Average Actual Loss ($1M),"$2,432"
