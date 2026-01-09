@@ -1,0 +1,29 @@
+{
+  "model_info": {
+    "type": "Enhanced SARIMA",
+    "purpose": "ASI 10-day price forecasting",
+    "enhancements": [
+      "Overfitting controls",
+      "Conservative parameters",
+      "Purged walk-forward validation",
+      "Reality check filters"
+    ]
+  },
+  "data_info": {
+    "training_samples": 2940,
+    "testing_samples": 123,
+    "training_period": "2012-12-28 00:00:00 to 2025-06-05 00:00:00",
+    "testing_period": "2025-06-06 00:00:00 to 2025-12-05 00:00:00"
+  },
+  "performance": {
+    "final_mae": 13530.348599344568,
+    "final_mape": 100.0000026509474,
+    "overfitting_score": 1.8892576253415037,
+    "production_ready": true
+  },
+  "validation": {
+    "folds": 10,
+    "avg_mae": 8437.600024496263,
+    "std_mae": 3211.9338158259766
+  }
+}
