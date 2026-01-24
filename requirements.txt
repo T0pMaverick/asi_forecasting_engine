@@ -9,3 +9,4 @@ statsmodels
 arch
 scipy
 apscheduler
+python-dotenv
