@@ -3,9 +3,9 @@ uvicorn
 sqlalchemy
 psycopg2-binary
 pandas
-numpy
+numpy==1.26.4
+git+https://github.com/rongardF/tvdatafeed.git
 statsmodels
 arch
 scipy
 apscheduler
-tvdatafeed
