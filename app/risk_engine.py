@@ -6,6 +6,12 @@ from statsmodels.tsa.arima.model import ARIMA
 from arch import arch_model
 from scipy.stats import t
 
+import warnings
+from statsmodels.tools.sm_exceptions import ValueWarning
+
+warnings.filterwarnings("ignore", category=ValueWarning)
+
+
 TRADING_DAYS = 252
 ROLLING_YEARS = 4
 H = 10

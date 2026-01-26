@@ -1,7 +1,5 @@
 fastapi
 uvicorn
-sqlalchemy
-psycopg2-binary
 pandas
 numpy==1.26.4
 git+https://github.com/rongardF/tvdatafeed.git
@@ -10,3 +8,8 @@ arch
 scipy
 apscheduler
 python-dotenv
+sqlalchemy
+apscheduler 
+pytz 
+sqlalchemy 
+psycopg2-binary

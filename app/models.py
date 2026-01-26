@@ -8,18 +8,29 @@ class ASIAlert(Base):
     __tablename__ = "asi_alerts"
 
     id = Column(Integer, primary_key=True, index=True)
+
     run_date = Column(Date, index=True)
+    run_type = Column(String, index=True)  # DAILY / INTRADAY_30M
+
+    # ===== Regime =====
     vol_regime = Column(Boolean)
 
+    # ===== Probabilities =====
     prob_minus_5 = Column(Float)
     prob_minus_10 = Column(Float)
     prob_minus_20 = Column(Float)
+
     prob_plus_5 = Column(Float)
     prob_plus_10 = Column(Float)
     prob_plus_20 = Column(Float)
 
+    # ===== Alerts (DOWN) =====
     alert_minus_5 = Column(String)
     alert_minus_10 = Column(String)
     alert_minus_20 = Column(String)
 
-    created_at = Column(DateTime, default=datetime.utcnow)
+    # ===== Alerts (UP) =====
+    alert_plus_5 = Column(String)
+    alert_plus_10 = Column(String)
+    alert_plus_20 = Column(String)
+
